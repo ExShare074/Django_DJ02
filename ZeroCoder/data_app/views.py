@@ -5,3 +5,5 @@ def data_view(request):
 
 def test_view(request):
     return render(request, 'data_app/test.html')
+
+

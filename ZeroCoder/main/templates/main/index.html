@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% extends 'main/layoute.html' %}
+
+{% block title %}
     <title>Главная страница</title>
     <style>
         body {
@@ -22,8 +22,9 @@
             margin-right: 10px;
         }
     </style>
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
     <div class="container">
         <h1>Добро пожаловать!</h1>
         <p>Это главная страница проекта.</p>
@@ -32,5 +33,6 @@
             <a href="/test/">Перейти на страницу Test</a>
         </p>
     </div>
-</body>
-</html>
+{% endblock %}
+
+

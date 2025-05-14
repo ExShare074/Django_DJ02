@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Вторая страничка для Django</title>
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+    <title>Третья страничка для Django</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,16 +22,16 @@
             margin-right: 10px;
         }
     </style>
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
     <div class="container">
         <h1>Добро пожаловать!</h1>
-        <p>Это вторая страница сайта по уроку Django.</p>
+        <p>Это третья страница сайта по уроку Django.</p>
         <p>
             <a href="/data/">Перейти на страницу Data</a> |
             <a href="/test/">Перейти на страницу Test</a>
         </p>
     </div>
-</body>
-</html>
+{% endblock %}
 
