@@ -5,9 +5,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # всё, что на /data/... → data_app
-    path('data/', include('data_app.urls')),
+    # теперь подключаем data_app без префикса
+    path('', include('data_app.urls')),
 
-    # всё, что на /new_post/, /new и / – → main
+    # main остаётся с теми же маршрутами
     path('', include('main.urls')),
 ]
