@@ -8,6 +8,7 @@ def new_post(request):
     return render(request, 'main/new_post.html')
 
 def new(request):
-    return HttpResponse('<h1>Это вторая страница проекта на django</h1>')
+    return render(request, 'main/new_post.html')
+
 
 
